@@ -1,0 +1,24 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+    <servlet>
+        <servlet-name>Agenda</servlet-name>
+        <servlet-class>com.agenda.resource.AgendaResource</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Agenda</servlet-name>
+        <url-pattern>/agenda</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddEditItem</servlet-name>
+        <servlet-class>com.agenda.resource.AddEditItemResource</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddEditItem</servlet-name>
+        <url-pattern>/add-item</url-pattern>
+    </servlet-mapping>
+
+</web-app>
