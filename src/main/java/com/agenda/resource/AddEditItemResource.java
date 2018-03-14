@@ -17,6 +17,13 @@ public class AddEditItemResource extends HttpServlet {
 
     private ItemService itemService = new ItemServiceImpl();
 
+    public AddEditItemResource() {
+    }
+
+    public AddEditItemResource(ItemService itemService) {
+        this.itemService = itemService;
+    }
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(resolvePath("add_edit_item"));
